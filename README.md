@@ -1,2 +1,3 @@
-# Mjema_et_al-2025
-Climate leaves molecular signatures of adaptation in native Arabidopsis 
+# Climate leaves molecular signatures of adaptation in native _Arabidopsis thaliana_
+
+## <u>Abstract</ u>
