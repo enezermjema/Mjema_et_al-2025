@@ -13,7 +13,7 @@ Climate change poses a major threat to humanity by driving biodiversity loss and
 
 ## Results
 
-### [Chapter 1](Chapter1)
+### [Chapter1](Chapter1)
 
 ### Chapter 2
 
