@@ -13,13 +13,11 @@ Climate change poses a major threat to humanity by driving biodiversity loss and
 
 ## Results
 
-### [Chapter 1](Chapter%201/)
-
-### Chapter 2
-
-### Chapter 3
-
-### Chapter 4
+- All the raw datasets, supplemental materials, intermediate data, results and scripts are provided in the subdirectories below;<br>
+i. [Chapter 1](Chapter%201/) - main figure 1 and associated supplementals. <br>
+ii. [Chapter 2](Chapter%202/) - main figure 2 and associated supplementals. <br>
+iii. [Chapter 3](Chapter%203/) - main figure 3 and associated supplementals. <br>
+iv. [Chapter 4](Chapter%204/) - main figure 4 and associated supplementals. <br>
 
 ## References
 1. Hultgren, A. et al. Impacts of climate change on global agriculture accounting for adaptation. Nature 642, 644–652 (2025). 
