@@ -120,7 +120,7 @@ ws1 <- ggplot(winter_spring2122) +
     comparisons = list(c(1, 2)),
     map_signif_level = TRUE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
-    textsize = 5, tip_length = 0.01, margin_top = 0.01
+    textsize = 4, tip_length = 0.01, margin_top = 0.01
   ) +
   theme_pub2()
 ws2 <- ggplot(winter_spring2122) +
@@ -134,7 +134,7 @@ ws2 <- ggplot(winter_spring2122) +
     comparisons = list(c(1, 2)),
     map_signif_level = TRUE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
-    textsize = 5, tip_length = 0.01, margin_top = 0.01
+    textsize = 4, tip_length = 0.01, margin_top = 0.01
   ) +
   theme_pub2()
 ws3 <- ggplot(winter_spring2122) +
@@ -148,7 +148,7 @@ ws3 <- ggplot(winter_spring2122) +
     comparisons = list(c(1, 2)),
     map_signif_level = TRUE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
-    textsize = 5, tip_length = 0.01, margin_top = 0.01
+    textsize = 4, tip_length = 0.01, margin_top = 0.01
   ) +
   theme_pub2()
 ws4 <- ggplot(winter_spring2122) +
@@ -162,7 +162,7 @@ ws4 <- ggplot(winter_spring2122) +
     comparisons = list(c(1, 2)),
     map_signif_level = TRUE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
-    textsize = 5, tip_length = 0.01, margin_top = 0.01
+    textsize = 4, tip_length = 0.01, margin_top = 0.01
   ) +
   theme_pub1()
 ws <- ws1 + ws2 + ws3 + ws4 +
@@ -187,7 +187,7 @@ ss1 <- ggplot(df_spring_spieke) +
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = TRUE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
-    textsize = 5, tip_length = 0.01, margin_top = 0.01
+    textsize = 4, tip_length = 0.01, margin_top = 0.01
   )  +
   theme_pub2()
 ss2 <- ggplot(df_spring_spieke) +
@@ -203,7 +203,7 @@ ss2 <- ggplot(df_spring_spieke) +
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = TRUE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
-    textsize = 5, tip_length = 0.01, margin_top = 0.01
+    textsize = 4, tip_length = 0.01, margin_top = 0.01
   )  +
   theme_pub2()
 ss3 <- ggplot(df_spring_spieke) +
@@ -315,22 +315,22 @@ petioleRatio <- ggplot(df_spring_spieke) +
   geom_boxplot(aes(fill = group, color = group), outlier.shape = NA, alpha = 0.5) +
   coord_cartesian(ylim = c(0, 2.2)) +
   geom_jitter(width = 0.2, size = 1, alpha = 0.03, colour = "black") +
-  scale_fill_manual(values = c("Spring 2021" = "skyblue", "Spring 2022" = "blue",
-                               "Spring 2023" = "green", "Spring 2024" = "orange", 
-                               "Spring 2025" = "red"), name = "Collection") +
-  scale_color_manual(values = c("Spring 2021" = "skyblue", "Spring 2022" = "blue",
-                                "Spring 2023" = "green", "Spring 2024" = "orange", 
-                                "Spring 2025" = "red"), name = "Collection") +
+  scale_fill_manual(values = c("Spring 2021" = "skyblue", "Spring 2022" = "grey80",
+                               "Spring 2023" = "grey40", "Spring 2024" = "red2", 
+                               "Spring 2025" = "grey60"), name = "Collection") +
+  scale_color_manual(values = c("Spring 2021" = "skyblue", "Spring 2022" = "grey80",
+                                "Spring 2023" = "grey40", "Spring 2024" = "red2", 
+                                "Spring 2025" = "grey60"), name = "Collection") +
   labs(x = NULL, y = "Petiole length ratio") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.04, y_position = c(0.8),
     textsize = 4, tip_length = 0.005, margin_top = 0.01
   )  +
   theme_pub2()
-ggsave(filename = "Desktop/git/Chapter 1/plots/petioleRatio - spiekeroog.pdf", 
+ggsave(filename = "Desktop/git/Chapter 1/plots/Figure-2b.pdf", 
        plot = petioleRatio, width = 7, height = 6, units = "in", dpi = 450)
 
 # Spring (Brachwitz) across years (2023 - 2025)
@@ -460,16 +460,16 @@ petioleRatio_brach <- ggplot(df_spring_brachwitz) +
   geom_boxplot(aes(fill = group, color = group), outlier.shape = NA, alpha = 0.5) +
   coord_cartesian(ylim = c(0, 1)) +
   geom_jitter(width = 0.2, size = 1, alpha = 0.03, colour = "black") +
-  scale_fill_manual(values = c("Spring 2023" = "green", "Spring 2024" = "orange", 
-                               "Spring 2025" = "red"), name = "Collection") +
-  scale_color_manual(values = c("Spring 2023" = "green", "Spring 2024" = "orange", 
-                                "Spring 2025" = "red"), name = "Collection") +
+  scale_fill_manual(values = c("Spring 2023" = "grey40", "Spring 2024" = "red2", 
+                               "Spring 2025" = "grey60"), name = "Collection") +
+  scale_color_manual(values = c("Spring 2023" = "grey40", "Spring 2024" = "red2", 
+                                "Spring 2025" = "grey60"), name = "Collection") +
   labs(x = NULL, y = "Petiole length ratio") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.04, y_position = c(0.8),
-    textsize = 4, tip_length = 0.005, margin_top = 0.01
+    map_signif_level = FALSE, test = "wilcox.test",
+    size = 0.3, step_increase = 0.04, y_position = c(0.76),
+    textsize = 4, tip_length = 0.003, margin_top = 0.01
   )  +
   theme_pub2()
 

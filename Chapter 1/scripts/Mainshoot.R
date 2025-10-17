@@ -119,7 +119,7 @@ sideshoots <- ggplot(spring_all_NA) +
   labs(x = "Mainshoot (y/n)", y = "Side shoots") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09, y_position = 10,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   ) +
@@ -134,7 +134,7 @@ sidebranch <- ggplot(spring_all_NA) +
   labs(x = "Mainshoot (y/n)", y = "Side branch") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09, y_position = c(8),
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   ) +
@@ -149,9 +149,9 @@ flowers <- ggplot(spring_all_NA) +
   labs(x = "Mainshoot (y/n)", y = "Flowers") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09, y_position = c(45),
-    textsize = 5, tip_length = 0.01, margin_top = 0.01
+    textsize = 5, tip_length = 0.004, margin_top = 0.01
   ) +
   theme_pub2()
 
@@ -164,9 +164,9 @@ silique <- ggplot(spring_all_NA) +
   labs(x = "Mainshoot (y/n)", y = "Siliques") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09, y_position = c(50),
-    textsize = 5, tip_length = 0.01, margin_top = 0.01
+    textsize = 5, tip_length = 0.004, margin_top = 0.01
   ) +
   theme_pub2()
 
@@ -180,18 +180,21 @@ reproductive <- ggplot(spring_all_NA) +
        caption = "Sample sizes: y = 1880, n = 128") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09, y_position = c(60),
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   ) +
   theme_pub1()
 
 # saving plots
+blank <- plot_spacer()
+mainshoot_main <- (blank + sideshoots) / (flowers + silique)
 
-mainshoot_main <- sideshoots + flowers +silique
 mainshoot_supple <- sidebranch + reproductive
 
 ggsave(filename = "Desktop/git/Chapter 1/plots/mainshoot_main.pdf", 
-       plot = mainshoot_main, width = 8, height = 4, units = "in", dpi = 450)
+       plot = mainshoot_main, width = 9, height = 6, units = "in", dpi = 450, 
+       device = cairo_pdf)
 ggsave(filename = "Desktop/git/Chapter 1/plots/mainshoot_supple.pdf", 
-       plot = mainshoot_supple, width = 7, height = 4, units = "in", dpi = 450)
+       plot = mainshoot_supple, width = 7, height = 4, units = "in", dpi = 450, 
+       device = cairo_pdf)
