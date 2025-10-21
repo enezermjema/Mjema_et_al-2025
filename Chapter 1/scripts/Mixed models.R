@@ -4,12 +4,10 @@ library(tidyverse)
 library(lme4)
 library(lmerTest)
 library(ggcorrplot)
-library(Cairo)
-#library(showtext)
+library(extrafont)
 
-#showtext_auto()   # automatically use showtext for all plots
-# Register Arial
-#font_add("Arial", regular = "Arial.ttf")
+font_import(pattern = "Arial")
+loadfonts(device = "pdf")
 
 source("Desktop/git/functions/custom_theme.R")
 
@@ -152,5 +150,4 @@ spring <- ggcorrplot(
 )
 
 ggsave(filename = "Desktop/git/Chapter 1/plots/Figure-1d.pdf", 
-       plot = spring, width = 7, height = 7, units = "in", dpi = 600, 
-       device = cairo_pdf)
+       plot = spring, width = 7, height = 7, units = "in", dpi = 600)

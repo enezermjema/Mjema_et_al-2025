@@ -4,12 +4,11 @@ library(tidyverse)
 library(ggpubr)
 library(ggsignif)
 library(readxl)
-library(showtext)
 library(patchwork)
+library(extrafont)
 
-showtext_auto()   # automatically use showtext for all plots
-# Register Arial
-font_add("Arial", regular = "Arial.ttf")
+font_import(pattern = "Arial")
+loadfonts(device = "pdf")
 
 source("Desktop/git/functions/custom_theme.R")
 
@@ -193,8 +192,6 @@ mainshoot_main <- (blank + sideshoots) / (flowers + silique)
 mainshoot_supple <- sidebranch + reproductive
 
 ggsave(filename = "Desktop/git/Chapter 1/plots/mainshoot_main.pdf", 
-       plot = mainshoot_main, width = 9, height = 6, units = "in", dpi = 450, 
-       device = cairo_pdf)
+       plot = mainshoot_main, width = 9, height = 6, units = "in", dpi = 450)
 ggsave(filename = "Desktop/git/Chapter 1/plots/mainshoot_supple.pdf", 
-       plot = mainshoot_supple, width = 7, height = 4, units = "in", dpi = 450, 
-       device = cairo_pdf)
+       plot = mainshoot_supple, width = 7, height = 4, units = "in", dpi = 450)

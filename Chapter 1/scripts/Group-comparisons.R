@@ -6,11 +6,10 @@ library(ggstatsplot)
 library(ggcorrplot)
 library(patchwork)
 library(ggsignif)
-library(showtext)
+library(extrafont)
 
-showtext_auto()   # automatically use showtext for all plots
-# Register Arial
-font_add("Arial", regular = "Arial.ttf")
+font_import(pattern = "Arial")
+loadfonts(device = "pdf")
 
 source("Desktop/git/functions/plot_comparison.R")
 source("Desktop/git/functions/custom_theme.R")
@@ -118,7 +117,7 @@ ws1 <- ggplot(winter_spring2122) +
   labs(x = NULL, y = "Length longest leaf") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 4, tip_length = 0.01, margin_top = 0.01
   ) +
@@ -132,7 +131,7 @@ ws2 <- ggplot(winter_spring2122) +
   labs(x = NULL, y = "Petiole longest leaf") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 4, tip_length = 0.01, margin_top = 0.01
   ) +
@@ -146,7 +145,7 @@ ws3 <- ggplot(winter_spring2122) +
   labs(x = NULL, y = "Width longest leaf") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 4, tip_length = 0.01, margin_top = 0.01
   ) +
@@ -160,7 +159,7 @@ ws4 <- ggplot(winter_spring2122) +
   labs(x = NULL, y = "Leaf number") +
   geom_signif(
     comparisons = list(c(1, 2)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 4, tip_length = 0.01, margin_top = 0.01
   ) +
@@ -185,7 +184,7 @@ ss1 <- ggplot(df_spring_spieke) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 4, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -201,7 +200,7 @@ ss2 <- ggplot(df_spring_spieke) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 4, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -217,7 +216,7 @@ ss3 <- ggplot(df_spring_spieke) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -233,7 +232,7 @@ ss4 <- ggplot(df_spring_spieke) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -249,7 +248,7 @@ ss5 <- ggplot(df_spring_spieke) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -265,7 +264,7 @@ ss6 <- ggplot(df_spring_spieke) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -281,7 +280,7 @@ ss7 <- ggplot(df_spring_spieke) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -297,7 +296,7 @@ ss8 <- ggplot(df_spring_spieke) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -343,7 +342,7 @@ sb1 <- ggplot(df_spring_brachwitz) +
   labs(x = NULL, y = "Length longest leaf") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -357,7 +356,7 @@ sb2 <- ggplot(df_spring_brachwitz) +
   labs(x = NULL, y = "Petiole longest leaf") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -371,7 +370,7 @@ sb3 <- ggplot(df_spring_brachwitz) +
   labs(x = NULL, y = "Width longest leaf") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -385,7 +384,7 @@ sb4 <- ggplot(df_spring_brachwitz) +
   labs(x = NULL, y = "Leaf number") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -399,7 +398,7 @@ sb5 <- ggplot(df_spring_brachwitz) +
   labs(x = NULL, y = "Caulie leaf number") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -413,7 +412,7 @@ sb6 <- ggplot(df_spring_brachwitz) +
   labs(x = NULL, y = "Stem width") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -427,7 +426,7 @@ sb7 <- ggplot(df_spring_brachwitz) +
   labs(x = NULL, y = "Flower number") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
@@ -441,7 +440,7 @@ sb8 <- ggplot(df_spring_brachwitz) +
   labs(x = NULL, y = "Plant length") +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
-    map_signif_level = TRUE, test = "wilcox.test",
+    map_signif_level = FALSE, test = "wilcox.test",
     size = 0.3, step_increase = 0.09,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +

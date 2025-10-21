@@ -5,11 +5,10 @@ library(ggpubr)
 library(ggstatsplot)
 library(ggcorrplot)
 library(patchwork)
-library(showtext)
+library(extrafont)
 
-showtext_auto()   # automatically use showtext for all plots
-# Register Arial
-font_add("Arial", regular = "Arial.ttf")
+font_import(pattern = "Arial")
+loadfonts(device = "pdf")
 
 source("Desktop/git/functions/custom_theme.R")
 

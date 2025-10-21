@@ -5,12 +5,10 @@ library(sf)
 library(rnaturalearth)
 library(leaflet)
 library(ggmap)
-library(showtext)
+library(extrafont)
 
-# Register Arial
-
-showtext_auto() 
-font_add("Arial", regular = "Arial.ttf")
+font_import(pattern = "Arial")
+loadfonts(device = "pdf")
 
 source("Desktop/git/functions/custom_theme.R")
 
