@@ -43,4 +43,4 @@ This work would not have been possible without the **Natural Arabidopsis Transcr
 - [Maria Bonatelli](https://github.com/mlbonatelli)
 - Cajus Hartmann
 - Maja Zarski
-- Eneza Mjema
+- [Eneza Mjema](https://github.com/enezermjema)
