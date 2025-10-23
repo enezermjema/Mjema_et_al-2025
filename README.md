@@ -38,3 +38,9 @@ This work would not have been possible without the **Natural Arabidopsis Transcr
 | **Plant Collection and Phenotyping** | Akash Shivhare, Anna Lee Kielblock, Bianca Rosinsky, Bruno Bülth, Carola Kretschmer, Carolin Apel, Cecile Scholl, Cornelius Schmidtke, Deike Stoffers, Dirk Albach, Eneza Mjema, Helge Bruelheide, Joachim Weber, Mandy Koller, Marcel Quint, Maria Bonatelli, Marvin Dill, Michael Kleyer, Nadja Janzen, Paul Nentwich, Rebecca Schwab, Sandra Schüler, Sascha Laubinger, Sylvia Haider, Tamara Schneider, Ute Jandt |
 | **Genome & Transcriptome Analysis (From Sample Preparation to Analysis)** | Annemarie Weise, Bart Verwaaijen, Christa Lanz, Deike Stoffers, Eneza Mjema, Matthias Jordan, Maria Bonatelli, Rebecca Schwab, Svea Küper |
 | **Students in Courses and Theses** | Anica Schmauch, Brit Bömer, David Wessendorf, David Würpel, Elisabeth Leutemann, Fatma Mekkaoui, Felix Meyer, Fynn Schröder, Friedrich Schönauer, Hannah Reich, Jennifer Prautsch, Johannes Köther, Josefin Müller, Kevin Kinder, Kevin Krawetzke, Linda Friedenberger, Lisa Marie Petrick Oropeza, Maike Cirksena, Niklas Zawichowski, Phil Weikert, Robert Helm, Svea Männel, Tessa Rieger, Vanessa Brückner, Vincent Munzer, Wiebke Dammann |
+
+## Code contributors
+- [Maria Bonatelli](https://github.com/mlbonatelli)
+- Cajus Hartmann
+- Maja Zarski
+- Eneza Mjema
