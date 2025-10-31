@@ -41,6 +41,6 @@ This work would not have been possible without the **Natural Arabidopsis Transcr
 
 ## Code contributors
 - [Maria Bonatelli](https://github.com/mlbonatelli)
-- Cajus Hartmann
-- Maja Zarski
+- [Cajus Hartmann](https://github.com/CajusHartmann)
+- [Maja Zarski](https://github.com/maja090205)
 - [Eneza Mjema](https://github.com/enezermjema)
