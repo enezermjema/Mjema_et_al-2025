@@ -6,7 +6,7 @@ library(lmerTest)
 library(ggcorrplot)
 library(extrafont)
 
-font_import(pattern = "Arial")
+font_import(pattern = "Arial", prompt = FALSE)
 loadfonts(device = "pdf")
 
 source("Desktop/git/functions/custom_theme.R")
@@ -145,7 +145,7 @@ spring <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = TRUE
 )
 

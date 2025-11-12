@@ -8,7 +8,7 @@ library(patchwork)
 library(ggsignif)
 library(extrafont)
 
-font_import(pattern = "Arial")
+font_import(pattern = "Arial", prompt = FALSE)
 loadfonts(device = "pdf")
 
 source("Desktop/git/functions/plot_comparison.R")
@@ -107,6 +107,10 @@ winter_spring2122$group <- factor(
   winter_spring2122$group,
   levels = c("Winter 2021", "Spring 2022")
 )
+
+winter_spring2122 %>%
+  dplyr::group_by(season) %>%
+  summarise(mean(leaves_number))
 
 ws1 <- ggplot(winter_spring2122) +
   aes(x = group, y = length_longest_leaf_cm) +

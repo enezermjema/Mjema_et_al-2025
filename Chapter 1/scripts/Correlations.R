@@ -7,7 +7,7 @@ library(ggcorrplot)
 library(patchwork)
 library(extrafont)
 
-font_import(pattern = "Arial")
+font_import(pattern = "Arial", prompt = FALSE)
 loadfonts(device = "pdf")
 
 source("Desktop/git/functions/custom_theme.R")
@@ -146,7 +146,7 @@ p1 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   show.legend = FALSE,
   title = "Winter 2021"
@@ -159,7 +159,7 @@ p2 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   show.legend = FALSE,
   title = "Spring 2021"
@@ -172,7 +172,7 @@ p3 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   show.legend = FALSE,
   title = "Spring 2022"
@@ -185,7 +185,7 @@ p4 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   show.legend = FALSE,
   title = "Spring 2023"
@@ -198,7 +198,7 @@ p5 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   show.legend = FALSE,
   title = "Spring 2024"
@@ -211,7 +211,7 @@ p6 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   show.legend = FALSE,
   title = "Spring 2025"
@@ -224,7 +224,7 @@ p7 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   show.legend = FALSE,
   title = "Spring 2023"
@@ -237,7 +237,7 @@ p8 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   show.legend = FALSE,
   title = "Spring 2024"
@@ -249,7 +249,7 @@ p9 <- ggcorrplot(
   sig.level = 0.05, 
   #insig = "blank", 
   lab = TRUE, 
-  colors = c("#E46726", "white", "#6D9EC1"),
+  colors = c("#6D9EC1", "white", "#E46726"),
   ggtheme = theme_pub1(), hc.order = FALSE,
   title = "Spring 2025"
 )
@@ -265,8 +265,8 @@ brach_all <- p7 + p8 + p9
 
 # Saving 
 
-ggsave(filename = "Desktop/git/Chapter 1/plots/correlation-main(brachwitz2025).pdf", 
-       plot = p9, width = 7, height = 7, units = "in", dpi = 450)
+#ggsave(filename = "Desktop/git/Chapter 1/plots/correlation-main(brachwitz2025).pdf", 
+#       plot = p9, width = 7, height = 7, units = "in", dpi = 450)
 ggsave(filename = "Desktop/git/Chapter 1/plots/correlation-spiekeroog.pdf", 
        plot = spieke_all, width = 19, height = 11, units = "in", dpi = 450)
 ggsave(filename = "Desktop/git/Chapter 1/plots/correlation-brachwitz.pdf", 
