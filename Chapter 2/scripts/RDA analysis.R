@@ -7,7 +7,7 @@ library(adespatial)
 library(grid)
 library(extrafont)
 
-font_import(pattern = "Arial")
+font_import(pattern = "Arial", prompt = FALSE)
 loadfonts(device = "pdf")
 
 source("Desktop/git/functions/custom_theme.R")
@@ -193,5 +193,5 @@ biplot <- ggplot() +
   ) +
   theme_pub1()
 
-ggsave(filename = "Desktop/git/Chapter 2/plots/Figure-2c.pdf", 
+ggsave(filename = "Desktop/git/Chapter 2/plots/Figure-2d.pdf", 
        plot = biplot, width = 10, height = 7, units = "in", dpi = 500)

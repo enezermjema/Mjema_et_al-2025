@@ -7,7 +7,7 @@ library(lmerTest)
 library(broom.mixed)
 library(extrafont)
 
-font_import(pattern = "Arial")
+font_import(pattern = "Arial", prompt = FALSE)
 loadfonts(device = "pdf")
 
 source("Desktop/git/functions/custom_theme.R")
@@ -197,16 +197,34 @@ write.csv(sig_effects_brach, "Desktop/git/Chapter 2/resulting data/sig_effects_b
 
 
 # plotting 
+cols = c("traitFlowers" = "#1b9e77", "traitLeaf number" = "#d95f02", 
+         "traitLength longest leaf" = "#7570b3", "traitPetiole longest leaf" = "#e7298a", 
+         "traitPlant length" = "#66a61e", "traitSidebranch" = "#e6ab02",
+         "traitSideshoots" = "#a6761d", "traitStem width" = "#666666", 
+         "traitWidth longest leaf" = "#8dd3c7")
+label = c("traitFlowers" = "Flowers", "traitLeaf number" = "Leaf number", 
+          "traitLength longest leaf" = "Length longest leaf", 
+          "traitPetiole longest leaf" = "Petiole longest leaf", 
+          "traitPlant length" = "Plant length", "traitSidebranch" = "Side branches",
+          "traitSideshoots" = "Side shoots", "traitStem width" = "Stem width", 
+          "traitWidth longest leaf" = "Width longest leaf")
+
 lmm_plot <- tidy(all_lmm, effects = "fixed") %>%
   filter(str_detect(term, ":trait")) %>%
+  filter(p.value < 0.05) %>%
   separate(term, into = c("climate", "trait"), sep = ":") %>%
   ggplot(aes(x = climate, y = estimate, fill = trait)) +
   geom_col(position = position_dodge()) +
   geom_errorbar(aes(ymin = estimate - std.error, ymax = estimate + std.error),
                 width = 0.2, position = position_dodge(0.9)) +
-  labs(y = "Effect on trait value", title = "Trait–climate interaction effects") +
+  scale_fill_manual(values = cols, label = label, name = "Trait measurements") +
+  labs(y = "Effect on trait value", title = "Weather-trait interaction effects") +
   theme_pub4()
 lmm_plot  
 
-ggsave(filename = "Desktop/git/Chapter 2/plots/Figure-2e.pdf", 
+ggsave(filename = "Desktop/git/Chapter 2/plots/Figure-2c.pdf", 
        plot = lmm_plot, width = 7, height = 5, units = "in", dpi = 500)
+
+
+
+
