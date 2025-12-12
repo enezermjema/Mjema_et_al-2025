@@ -1,0 +1,9 @@
+sample,fastq_1,fastq_2,strandedness
+SRX5557581,/work/hartmaca/liu_fetchngs/fastq/SRX5557581_SRR8767381_1.fastq.gz,/work/hartmaca/liu_fetchngs/fastq/SRX5557581_SRR8767381_2.fastq.gz,auto
+SRX5557582,/work/hartmaca/liu_fetchngs/fastq/SRX5557582_SRR8767382_1.fastq.gz,/work/hartmaca/liu_fetchngs/fastq/SRX5557582_SRR8767382_2.fastq.gz,auto
+SRX5557583,/work/hartmaca/liu_fetchngs/fastq/SRX5557583_SRR8767383_1.fastq.gz,/work/hartmaca/liu_fetchngs/fastq/SRX5557583_SRR8767383_2.fastq.gz,auto
+SRX5557584,/work/hartmaca/liu_fetchngs/fastq/SRX5557584_SRR8767384_1.fastq.gz,/work/hartmaca/liu_fetchngs/fastq/SRX5557584_SRR8767384_2.fastq.gz,auto
+SRX5557593,/work/hartmaca/liu_fetchngs/fastq/SRX5557593_SRR8767377_1.fastq.gz,/work/hartmaca/liu_fetchngs/fastq/SRX5557593_SRR8767377_2.fastq.gz,auto
+SRX5557594,/work/hartmaca/liu_fetchngs/fastq/SRX5557594_SRR8767378_1.fastq.gz,/work/hartmaca/liu_fetchngs/fastq/SRX5557594_SRR8767378_2.fastq.gz,auto
+SRX5557595,/work/hartmaca/liu_fetchngs/fastq/SRX5557595_SRR8767379_1.fastq.gz,/work/hartmaca/liu_fetchngs/fastq/SRX5557595_SRR8767379_2.fastq.gz,auto
+SRX5557596,/work/hartmaca/liu_fetchngs/fastq/SRX5557596_SRR8767380_1.fastq.gz,/work/hartmaca/liu_fetchngs/fastq/SRX5557596_SRR8767380_2.fastq.gz,auto

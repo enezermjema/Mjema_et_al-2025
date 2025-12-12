@@ -1,0 +1,9 @@
+sample,fastq_1,fastq_2,strandedness
+SRX6051476,/work/hartmaca/zhang_fetchngs/fastq/SRX6051476_SRR9281760_1.fastq.gz,/work/hartmaca/zhang_fetchngs/fastq/SRX6051476_SRR9281760_2.fastq.gz,auto
+SRX6051477,/work/hartmaca/zhang_fetchngs/fastq/SRX6051477_SRR9281759_1.fastq.gz,/work/hartmaca/zhang_fetchngs/fastq/SRX6051477_SRR9281759_2.fastq.gz,auto
+SRX6051478,/work/hartmaca/zhang_fetchngs/fastq/SRX6051478_SRR9281758_1.fastq.gz,/work/hartmaca/zhang_fetchngs/fastq/SRX6051478_SRR9281758_2.fastq.gz,auto
+SRX6051479,/work/hartmaca/zhang_fetchngs/fastq/SRX6051479_SRR9281757_1.fastq.gz,/work/hartmaca/zhang_fetchngs/fastq/SRX6051479_SRR9281757_2.fastq.gz,auto
+SRX6051480,/work/hartmaca/zhang_fetchngs/fastq/SRX6051480_SRR9281756_1.fastq.gz,/work/hartmaca/zhang_fetchngs/fastq/SRX6051480_SRR9281756_2.fastq.gz,auto
+SRX6051481,/work/hartmaca/zhang_fetchngs/fastq/SRX6051481_SRR9281755_1.fastq.gz,/work/hartmaca/zhang_fetchngs/fastq/SRX6051481_SRR9281755_2.fastq.gz,auto
+SRX6051482,/work/hartmaca/zhang_fetchngs/fastq/SRX6051482_SRR9281754_1.fastq.gz,/work/hartmaca/zhang_fetchngs/fastq/SRX6051482_SRR9281754_2.fastq.gz,auto
+SRX6051483,/work/hartmaca/zhang_fetchngs/fastq/SRX6051483_SRR9281753_1.fastq.gz,/work/hartmaca/zhang_fetchngs/fastq/SRX6051483_SRR9281753_2.fastq.gz,auto
