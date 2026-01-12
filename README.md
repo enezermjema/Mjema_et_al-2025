@@ -33,7 +33,7 @@ iv. [Chapter 4](Chapter%204/) - main figure 4 and associated supplementals. <br>
 This work would not have been possible without the **Natural Arabidopsis Transcriptomics and In situ Variation Exploration (Native)-Consortium**.
 - We are very grateful for their contribution in different tasks involved during the entire period of the project. The table below list these individuals (alphabetical ordered) and their respective roles.
 
-| Roles | Participator |
+| Roles | Participants |
 |:------|:-------------|
 | **Plant Collection and Phenotyping** | Akash Shivhare, Anna Lee Kielblock, Bianca Rosinsky, Bruno Bülth, Carola Kretschmer, Carolin Apel, Cecile Scholl, Cornelius Schmidtke, Deike Stoffers, Dirk Albach, Eneza Mjema, Helge Bruelheide, Joachim Weber, Mandy Koller, Marcel Quint, Maria Bonatelli, Marvin Dill, Michael Kleyer, Nadja Janzen, Paul Nentwich, Rebecca Schwab, Sandra Schüler, Sascha Laubinger, Sylvia Haider, Tamara Schneider, Ute Jandt |
 | **Genome & Transcriptome Analysis (From Sample Preparation to Analysis)** | Annemarie Weise, Bart Verwaaijen, Christa Lanz, Deike Stoffers, Eneza Mjema, Matthias Jordan, Maria Bonatelli, Rebecca Schwab, Svea Küper |
