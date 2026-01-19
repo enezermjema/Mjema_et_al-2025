@@ -18,6 +18,7 @@ i. [Chapter 1](Chapter%201/) - main figure 1 and associated supplementals. <br>
 ii. [Chapter 2](Chapter%202/) - main figure 2 and associated supplementals. <br>
 iii. [Chapter 3](Chapter%203/) - main figure 3 and associated supplementals. <br>
 iv. [Chapter 4](Chapter%204/) - main figure 4 and associated supplementals. <br>
+v. [Comparative analysis](Comparative%20analysis/) - gene validation by comparative approach. <br>
 
 ## References
 1. Hultgren, A. et al. Impacts of climate change on global agriculture accounting for adaptation. Nature 642, 644–652 (2025). 
