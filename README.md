@@ -1,4 +1,4 @@
-# Climate leaves molecular signatures of adaptation in native _Arabidopsis thaliana_
+# Molecular and phenotypic footprints of climate in native _Arabidopsis thaliana_ (under construction)
 
 ## Table of Contents
 
