@@ -1,0 +1,51 @@
+2022samples.Aug2-24_3.txt -> plate1
+
+plate4.Aug2024_3 -> plate4
+
+allsamples.Jul2024_3.txt -> MJ2, MJ4, plate3, plate5, plate6
+
+allsamples.Dec2024_11_updated3.txt -> MJ3, MJ5, MJ6, MJ7, MJ8
+
+allsamples.Jan2025_01_updated3.txt -> MJ14
+
+allsamples.Apr2025_03_edited.txt <- MJ15, MJ16, MJ17, MJ19 (MJ18 removed)
+
+allsamples.May2025_03.txt <- MJ2, MJ3, MJ4, MJ20, MJ22 (MJ21 removed while MJ[2, 3, 4] were repeated)
+
+
+#---------------------------------------------------------------------------------------------------------
+
+
+plate 2 - Aug 4 2023
+
+plate(3, 5, 6) and mj(2, 4) - Apr 8 2024 (90-980995623)
+
+plate(4) and mj(3, 5, 6, 7) - Aug 1 2024 (90-1049921349)
+
+mj(3, 5, 6, 7, 8, 9) - Nov 14 2024 (90-1102749426) Some plates were repeated
+
+mj(10, 11, 14) - Jan 6 2025 (90-1127246626)
+
+
+Plate	Batch
+-------------
+plate1	1
+plate2	2
+plate3	3
+plate4	4
+plate5	5
+plate6	6
+MJ2	7
+MJ3	8
+MJ4	9
+MJ5	10
+MJ6	11
+MJ7	12
+MJ8	13
+MJ14	14
+MJ15	15
+MJ16	16
+MJ17	17
+MJ19	18
+MJ20	19
+MJ22	20
