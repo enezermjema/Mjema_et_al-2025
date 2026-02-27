@@ -8,6 +8,8 @@
 
 **Anomalies.R** - Monthly baseline means are calculated. Weather anomalies are generated and plotted. <br>
 
-**petioleTemperature - mixed model.R** - <br>
-**trait climate - LMM.R** - <br>
-**RDA analysis.R** - <br>
+**petioleTemperature - mixed model.R** - Linear mixed model of petiole length and temperature related weather variables <br>
+
+**trait climate - LMM.R** - Checking for weather-trait specific sensitivities. Linear mixed model for weather-trait interaction with collection years as a random effect<br>
+
+**RDA analysis.R** - Redundancy analysis to check the influence of weather fluctuation on trait variation <br>
