@@ -4,8 +4,8 @@
 
 ## Script description
 
-**Weather data - preparation.R** - \n
-**Anomalies.R** - 
-**petioleTemperature - mixed model.R** - 
-**trait climate - LMM.R** - 
-**RDA analysis.R** - 
+**Weather data - preparation.R** - <br>
+**Anomalies.R** - <br>
+**petioleTemperature - mixed model.R** - <br>
+**trait climate - LMM.R** - <br>
+**RDA analysis.R** - <br>
