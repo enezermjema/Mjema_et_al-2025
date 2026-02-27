@@ -4,8 +4,10 @@
 
 ## Script description
 
-**Weather data - preparation.R** - Mean monthly weather variables are computed from the daily weather datasets from Spiekeroog and Brachwitz. Line plots of these monthly means are also generated <br>
+**Weather data - preparation.R** - Mean monthly weather variables are computed from the daily weather datasets from     Spiekeroog and Brachwitz. Line plots of these monthly means are also generated <br>
+
 **Anomalies.R** - Monthly baseline means are calculated. Weather anomalies are generated and plotted. <br>
+
 **petioleTemperature - mixed model.R** - <br>
 **trait climate - LMM.R** - <br>
 **RDA analysis.R** - <br>
