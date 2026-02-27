@@ -1,4 +1,4 @@
-# Molecular and phenotypic footprints of climate in native _Arabidopsis thaliana_ (under construction)
+# Molecular and phenotypic footprints of climate in native _Arabidopsis thaliana_
 
 ## Table of Contents
 
