@@ -9,7 +9,7 @@
 
 ## Abstract
 
-Climate change poses a major threat to humanity by driving biodiversity loss and reducing crop yields<sup>1,2</sup>. To understand the molecular and developmental impacts of rising temperatures, plant science has relied heavily on the model organism Arabidopsis thaliana. Despite decades of research, its development under fully natural conditions remains poorly understood, and only ~30% of genes have experimental functional annotations, largely because many functions are subtle or manifest only under specific ecological contexts<sup>3</sup>. Here, we address this gap with an ecological genomics approach that integrates intensive phenotyping and transcriptomic profiling of naturally occurring plants in their native habitats. Across two environmentally distinct locations and five growth seasons (2021–2025), we captured detailed traits from more than 3,000 Arabidopsis plants and 1,300 corresponding transcriptomes, spanning a wide range of interannual temperature variation. This dataset of over 35,000 quantitative phenotypic measurements provides an unprecedented resource for linking climate fluctuations to plant traits and gene expression. Seasons with pronounced temperature anomalies directly influenced phenotypes, and climatic parameters together explained up to 17% of trait variation. In situ transcriptomes carried clear temperature signatures, which we exploited with machine learning to identify genes underlying climate-relevant traits. The models recovered canonical temperature-response regulators, including PIF4<sup>4,5</sup>, ELF4<sup>6</sup>, and the ethylene receptor ETR1<sup>7</sup>, and uncovered previously unrecognized genes with potential roles in climate adaptation. This ecological genomics framework establishes a scalable model for climate-aware functional genomics in plants.
+Climate change poses a major threat to humanity by driving biodiversity loss and reducing crop yields<sup>1,2</sup>. To understand the molecular and developmental impacts of rising temperatures, plant science has relied heavily on the model organism Arabidopsis thaliana. Despite decades of research, its development under fully natural conditions remains poorly understood, and only ~30% of genes have experimental functional annotations, largely because many functions are subtle or manifest only in specific laboratory or ecological contexts<sup>3</sup>. Here, we address this gap with a landscape transcriptomic approach that integrates intensive phenotyping and transcriptomic profiling of naturally occurring plants in their native habitats<sup>4</sup>. Across two contrasting field sites and five growing seasons (2021-2025), we phenotyped more than 3,489 A. thaliana plants and generated 1,611 matching transcriptomes. The resulting >31,000 quantitative trait measurements provide a unique opportunity to link climate fluctuations with plant traits and gene expression. Seasons characterized by extreme temperature anomalies directly influenced plant traits, and climatic variables together explained up to 17% of phenotypic variation. In-situ transcriptomes carried clear temperature and local environmental signatures, closely matching temperature-response programs known from the laboratory. Leveraging paired per-plant transcriptomes and phenotypes, we applied machine learning to predict regulators of climate-relevant and other plant traits under natural conditions. The models recovered canonical thermomorphogenesis regulators, including PHYTOCHROME INTERACTING FACTOR 4 (PIF4)<sup>5,6</sup>, providing ecological evidence that temperature signaling pathways defined in controlled environments operate in the wild, and expanded this regulatory landscape by identifying hormonal receptors, signaling components, and previously uncharacterized genes, some of which we functionally validated. Together, this work demonstrates that landscape transcriptomics, by integrating natural field transcriptomes with phenotypes, and thus, capturing environmental and regulatory states, enables the predictive identification of genetic regulators of temperature responses and broader plant traits. This makes landscape transcriptomics a scalable framework for climate-aware functional genomics in plants.
 
 ## Results
 
@@ -22,13 +22,14 @@ v. [Comparative analysis](Comparative%20analysis/) - gene validation by comparat
 vi. [Microbial composition](Microbial%20composition/) - Assessement of the microbial composition from the reads unmapped to _A. thaliana_ genome. <br>
 
 ## References
+
 1. Hultgren, A. et al. Impacts of climate change on global agriculture accounting for adaptation. Nature 642, 644–652 (2025). 
 2. Thomas, C. D. et al. Extinction risk from climate change. Nature 427, 145–148 (2004). 
-3. Reiser, L. et al. The Arabidopsis Information Resource in 2024. Genetics 227, (2024). 
-4. Kumar, S. V. et al. Transcription factor PIF4 controls the thermosensory activation of flowering. Nature 484, 242–245 (2012). 
-5. Koini, M. A. et al. High Temperature-Mediated Adaptations in Plant Architecture Require the bHLH Transcription Factor PIF4. Current Biology 19, 408–413 (2009). 
-6. Chen, W. W. et al. A mobile ELF4 delivers circadian temperature information from shoots to roots. Nat Plants 6, 416–426 (2020). 
-7. Chang, C., Kwok, S. F., Bleecker, A. B. & Meyerowitz, E. M. Arabidopsis Ethylene-Response Gene ETR1: Similarity of Product to Two-Component Regulators. Science (1979) 262, 539–544 (1993). 
+3. Reiser, L. et al. The Arabidopsis Information Resource in 2024. Genetics 227, (2024).
+4. 4. Keagy, J. et al. Landscape transcriptomics as a tool for addressing global change effects across diverse species. Mol. Ecol. Resour. 25, (2025). 
+5. Kumar, S. V. et al. Transcription factor PIF4 controls the thermosensory activation of flowering. Nature 484, 242–245 (2012). 
+6. Koini, M. A. et al. High Temperature-Mediated Adaptations in Plant Architecture Require the bHLH Transcription Factor PIF4. Current Biology 19, 408–413 (2009). 
+
 
 ## Participants
 
@@ -42,6 +43,7 @@ This work would not have been possible without the **Natural Arabidopsis Transcr
 | **Students in Courses and Theses** | Anica Schmauch, Brit Bömer, David Wessendorf, David Würpel, Elisabeth Leutemann, Fatma Mekkaoui, Felix Meyer, Fynn Schröder, Friedrich Schönauer, Hannah Reich, Jennifer Prautsch, Johannes Köther, Josefin Müller, Kevin Kinder, Kevin Krawetzke, Linda Friedenberger, Lisa Marie Petrick Oropeza, Maike Cirksena, Niklas Zawichowski, Phil Weikert, Robert Helm, Svea Männel, Tessa Rieger, Vanessa Brückner, Vincent Munzer, Wiebke Dammann |
 
 ## Code contributors
+
 - [Maria Bonatelli](https://github.com/mlbonatelli)
 - [Cajus Hartmann](https://github.com/CajusHartmann)
 - [Maja Zarski](https://github.com/maja090205)
