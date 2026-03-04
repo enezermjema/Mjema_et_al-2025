@@ -189,10 +189,10 @@ ss1 <- ggplot(df_spring_spieke) +
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 7,
     textsize = 4, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 ss2 <- ggplot(df_spring_spieke) +
   aes(x = group, y = petiole_longest_leaf_cm) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -205,10 +205,10 @@ ss2 <- ggplot(df_spring_spieke) +
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 3,
     textsize = 4, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 ss3 <- ggplot(df_spring_spieke) +
   aes(x = group, y = width_longest_leaf_cm) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -221,10 +221,10 @@ ss3 <- ggplot(df_spring_spieke) +
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 2,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 ss4 <- ggplot(df_spring_spieke) +
   aes(x = group, y = leaves_number) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -237,10 +237,10 @@ ss4 <- ggplot(df_spring_spieke) +
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 30,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 ss5 <- ggplot(df_spring_spieke) +
   aes(x = group, y = Cauline_leaves) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -253,10 +253,10 @@ ss5 <- ggplot(df_spring_spieke) +
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 70,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 ss6 <- ggplot(df_spring_spieke) +
   aes(x = group, y = stem_cm) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -269,10 +269,10 @@ ss6 <- ggplot(df_spring_spieke) +
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 3,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 ss7 <- ggplot(df_spring_spieke) +
   aes(x = group, y = flowers) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -285,10 +285,10 @@ ss7 <- ggplot(df_spring_spieke) +
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 120,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 ss8 <- ggplot(df_spring_spieke) +
   aes(x = group, y = plant_length_cm) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -301,15 +301,17 @@ ss8 <- ggplot(df_spring_spieke) +
     comparisons = list(c(1, 2), c(1, 3), c(1, 4), c(1, 5), c(2, 3), c(2, 4), 
                        c(2, 5), c(3, 4), c(3, 5), c(4, 5)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 50,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 ss <- ss1 + ss2 + ss3 + ss4 + ss5 + ss6 + ss7 + ss8 +
   plot_layout(nrow = 2) +
   plot_annotation(tag_levels = "a", title = "Spiekeroog spring comparisons (2021 - 2025)")
 
 ggsave(filename = "Desktop/git/Chapter 1/plots/allTraits - springSpiekeroog.pdf", 
+       plot = ss, width = 19.69291, height = 12, units = "in", dpi = 450)
+ggsave(filename = "Desktop/git/Chapter 1/plots/allTraits - springSpiekeroog.jpeg", 
        plot = ss, width = 19.69291, height = 12, units = "in", dpi = 450)
 
 # Petiole length ratio (For weather results)
@@ -347,10 +349,10 @@ sb1 <- ggplot(df_spring_brachwitz) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 20,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 sb2 <- ggplot(df_spring_brachwitz) +
   aes(x = group, y = petiole_longest_leaf_cm) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -361,10 +363,10 @@ sb2 <- ggplot(df_spring_brachwitz) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 6,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 sb3 <- ggplot(df_spring_brachwitz) +
   aes(x = group, y = width_longest_leaf_cm) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -375,10 +377,10 @@ sb3 <- ggplot(df_spring_brachwitz) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 1.7,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 sb4 <- ggplot(df_spring_brachwitz) +
   aes(x = group, y = leaves_number) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -389,10 +391,10 @@ sb4 <- ggplot(df_spring_brachwitz) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 50,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 sb5 <- ggplot(df_spring_brachwitz) +
   aes(x = group, y = Cauline_leaves) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -403,10 +405,10 @@ sb5 <- ggplot(df_spring_brachwitz) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 70,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 sb6 <- ggplot(df_spring_brachwitz) +
   aes(x = group, y = stem_cm) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -417,10 +419,10 @@ sb6 <- ggplot(df_spring_brachwitz) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 2.5,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 sb7 <- ggplot(df_spring_brachwitz) +
   aes(x = group, y = flowers) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -431,10 +433,10 @@ sb7 <- ggplot(df_spring_brachwitz) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 150,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 sb8 <- ggplot(df_spring_brachwitz) +
   aes(x = group, y = plant_length_cm) +
   geom_boxplot(aes(fill = group), outlier.shape = NA, alpha = 0.4) +
@@ -445,15 +447,17 @@ sb8 <- ggplot(df_spring_brachwitz) +
   geom_signif(
     comparisons = list(c(1, 2), c(1, 3), c(2, 3)),
     map_signif_level = FALSE, test = "wilcox.test",
-    size = 0.3, step_increase = 0.09,
+    size = 0.3, step_increase = 0.09, y_position = 150,
     textsize = 5, tip_length = 0.01, margin_top = 0.01
   )  +
-  theme_pub2()
+  theme_bw3()
 sb <- sb1 + sb2 + sb3 + sb4 + sb5 + sb6 + sb7 + sb8 +
   plot_layout(nrow = 2) +
   plot_annotation(tag_levels = "a", title = "Brachwitz spring comparisons (2023 - 2025)")
 
 ggsave(filename = "Desktop/git/Chapter 1/plots/allTraits - springBrachwitz.pdf", 
+       plot = sb, width = 19.69291, height = 12, units = "in", dpi = 450)
+ggsave(filename = "Desktop/git/Chapter 1/plots/allTraits - springBrachwitz.jpeg", 
        plot = sb, width = 19.69291, height = 12, units = "in", dpi = 450)
 
 # Petiole length ratio (For weather results)
