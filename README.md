@@ -1,5 +1,7 @@
 # Molecular and phenotypic footprints of climate in native _Arabidopsis thaliana_ (Under construction)
 
+## Full scripts and resulting outputs for chapter 3 and 4 are provided here [Mjema et al., 2026](https://git.nfdi4plants.org/eneza-yoeli.mjema/molecular-and-phenotypic-footprints-of-climate-in-native-arabidopsis-thaliana/-/tree/main/Chapter%204)
+
 ## Table of Contents
 
 1. [Abstract](#abstract)
